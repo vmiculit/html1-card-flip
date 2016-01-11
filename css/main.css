@@ -10,19 +10,21 @@
 
 .front {
 	position: absolute;
+	transition: 2s;
 }
 
 .back {
 	transform: rotateY(-180deg);
 	backface-visibility: hidden;
+	transition: 2s;
 }
 
 .portfolio-item:hover .back {
 	transform: rotateY(0);
-	transition: 1s;
+	transition: 2s ease all;
 }
 
 .portfolio-item:hover .front {
 	transform:	rotateY(180deg);
-	transition: 1s;
+	transition: 2s ease all;
 }
